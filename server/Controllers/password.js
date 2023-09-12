@@ -28,7 +28,7 @@ export const ForgotPassword = (req, res) => {
                 from: 'hirakjyotidas2808000@gmail.com',
                 to: `${user.email}`,
                 subject: 'Reset Your Password',
-                text: `https://login-authentication-jwt.vercel.app/reset-password/${user._id}/${token}`
+                text: `http://localhost:3000/reset-password/${user._id}/${token}`
             };
 
             transporter.sendMail(mailOptions, function (error, info) {

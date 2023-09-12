@@ -11,7 +11,7 @@ export default function ForgotPassword() {
     axios.defaults.withCredentials = true;
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post("https://login-authentication-jwt.onrender.com/password/forgot", { email })
+        axios.post("http://localhost:8000/password/forgot", { email })
             .then(res => {
                 if (res.data.Status === "Success") {
                     alert("Reset Password Link has been sent to your gmail")

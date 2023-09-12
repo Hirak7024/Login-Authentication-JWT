@@ -14,7 +14,7 @@ const Home = () => {
         navigate("/login");
       }
       const { data } = await axios.post(
-        "https://login-authentication-jwt.onrender.com/user/",
+        "http://localhost:8000/user/",
         {},
         { withCredentials: true }
       );

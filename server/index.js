@@ -13,7 +13,7 @@ const PORT = 8000;
 app.use(express.json());
 app.use(
     cors({
-        origin: ["https://login-authentication-jwt.vercel.app/"],
+        origin: ["http://localhost:3000"],
         methods: ["GET", "POST", "PUT", "DELETE"],
         credentials: true,
     })

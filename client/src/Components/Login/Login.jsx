@@ -32,7 +32,7 @@ export default function Login() {
         e.preventDefault();
         try {
             const { data } = await axios.post(
-                "https://login-authentication-jwt.onrender.com/user/login",formData,{ withCredentials: true }
+                "http://localhost:8000/user/login",formData,{ withCredentials: true }
             );
             console.log(data);
             const { success, message } = data;

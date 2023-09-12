@@ -12,7 +12,7 @@ export default function ResetPassword() {
     axios.defaults.withCredentials = true;
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post(`https://login-authentication-jwt.onrender.com/password/reset/${id}/${token}`, { password })
+        axios.post(`http://localhost:8000/password/reset/${id}/${token}`, { password })
             .then(res => {
                 if (res.data.Status === "Success") {
                     alert("Password has been reset");
