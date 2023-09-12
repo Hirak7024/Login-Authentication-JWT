@@ -1,0 +1,99 @@
+.registerContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(120deg, #191714,#2234AE);
+    .formContainer{
+        width: 400px;
+        height: fit-content;
+        background-color: white;
+        margin-top: 25vh;
+        padding: 20px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        h1{
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+        form{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+            .labelAndInput{
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                gap: 5px;
+                margin-bottom: 10px;
+                label{
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                input{
+                    width: 100%;
+                    height: 35px;
+                    padding-left: 5px;
+                    font-size: 15px;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    border-bottom: 2px solid #2234AE;
+                    outline: none;
+                }
+            }
+            .forgotPasswordLink{
+                // width: 100%;
+                font-size: 14px;
+                font-weight: 500;
+                text-decoration: none;
+                color: #1d2a80;
+                cursor: pointer;
+                display: flex;
+                align-self: flex-end;
+            }
+            .forgotPasswordLink:hover{
+                color: #2234AE;
+                text-decoration: underline;
+            }
+            button{
+                width: 100px;
+                height: 40px;
+                border: none;
+                background-color: #2234AE;
+                color: white;
+                font-size: 15px;
+                font-weight: 500;
+                border-radius: 5px;
+                align-self: center;
+                margin: 20px 0;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: #080f3e;
+            }
+        }
+        .link{
+            display: flex;
+            margin: 10px 0;
+            p{
+                font-size: 15px;
+            }
+            .signInLink{
+                color: black;
+                text-decoration: none;
+                margin-left: 5px;
+                font-size: 15px;
+                cursor: pointer;
+                font-weight: 500;
+            }
+            .signInLink:hover{
+                color: #2234AE;
+                text-decoration: underline;
+            }
+        }
+    }
+}
