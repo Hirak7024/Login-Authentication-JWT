@@ -13,7 +13,7 @@ const PORT = 8000;
 app.use(express.json());
 app.use(
     cors({
-        origin: ["http://localhost:3000"],
+        origin: ["https://hotel-booking-personal-project-cswd.vercel.app/"],
         methods: ["GET", "POST", "PUT", "DELETE"],
         credentials: true,
     })
